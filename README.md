@@ -45,7 +45,7 @@ class ExampleComponent extends React.Component {
     }
     componentDidMount () {
         fetch('http://data.kk.dk/parking/latest/50')
-        .then((response)) => response.json()
+        .then((response) => response.json())
         .then((json) => {
             this.setState({ parkingData: json })
         })
